@@ -80,7 +80,23 @@ public class DoublyLinkList {
         previous.next=node;
 
     }
+    public int SearchList(int target)
+    {
+        DoublyLinkList.Node n = head;
+        int i;
 
+        for(i =0; n.data!=target;i++)
+        {
+            n = n.next;
+        }
+        if(n.data==target)
+        {
+            System.out.println();
+            System.out.println("Data "+ n.data+" found at: "+ i);
+            return 1;
+        }
+        else return -1;
+    }
     public void DisplayList()
     {
         DoublyLinkList.Node n = head;

@@ -44,5 +44,10 @@ public class MainForDLL {
         System.out.println();
         System.out.println("After deleting a node in between two nodes");
         list.DisplayList();
+
+        // searching an element
+        System.out.println();
+        System.out.print("Searching the element...");
+        list.SearchList(4);
     }
 }
