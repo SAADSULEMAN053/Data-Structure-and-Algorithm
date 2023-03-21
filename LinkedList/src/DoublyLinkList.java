@@ -82,6 +82,10 @@ public class DoublyLinkList {
     }
     public int SearchList(int target)
     {
+
+        // the time complexity for searching is O(n) "linear time complexity", however it could be O(nlogn) using binary search, but O(n)
+        // is more efficient approach. ***Here 'n' represents number of nodes***
+
         DoublyLinkList.Node n = head;
         int i;
 
