@@ -51,16 +51,34 @@ public class DoublyLinkList {
         this.head = NewHead;
     }
 
+    public void DeleteNode(Node node)
+    {
+        if(node == this.head)
+        {
+            System.out.println();
+            System.out.println("Head cannot be deleted");
+        }
+        else {
+            node.previous.next = node.next;
+            node.next.previous = node.previous;
+
+            node.previous = null;
+            node.next = null;
+        }
+    }
+
     public void InsertNew(Node previous, Node NewNode)
     {
        Node node = NewNode;
 
        node.next=previous.next;
        node.previous= previous;
-       previous.next=node;
 
        if(previous.next!=null){
        previous.next.previous=node;}
+
+        previous.next=node;
+
     }
 
     public void DisplayList()

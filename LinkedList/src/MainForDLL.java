@@ -1,6 +1,6 @@
 public class MainForDLL {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         DoublyLinkList list = new DoublyLinkList();
 
         list.head = new DoublyLinkList.Node(1);
@@ -38,5 +38,11 @@ public class MainForDLL {
         System.out.println("After adding a new node in between two nodes");
         list.DisplayList();
 
+        // deleting a node from the list
+
+        list.DeleteNode(third.next);
+        System.out.println();
+        System.out.println("After deleting a node in between two nodes");
+        list.DisplayList();
     }
 }
