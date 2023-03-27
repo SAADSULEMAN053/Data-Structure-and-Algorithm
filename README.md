@@ -4,7 +4,7 @@ In this repo, I will be sharing implementations of various data structures/vault
 ## Queue Added.
 03/02/2023
 
-## Simple Linked List Added.
+## Linked List Added.
 03/21/2023
 
 ## Assignment Problems
