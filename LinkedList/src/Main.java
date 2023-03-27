@@ -19,7 +19,7 @@ and then the actual insertion is performed using operations of linked list
 
 so when I need to insert a node, in order to get the previous node I access it using arraylist indices
 and then perform insertion using linked list function
-in that way both operations are done in O(1) time 
+in that way both operations are done in O(1) time
 * */
 
 import java.util.ArrayList;
