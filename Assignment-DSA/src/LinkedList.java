@@ -1,7 +1,7 @@
 public class LinkedList {
 
     Node head,tail;
-    static int size = -2;
+    static int size = 0;
     static class Node
     {
         int data;
@@ -78,12 +78,13 @@ public class LinkedList {
 
     public void size()
     {
-
+        size -= 2;
         System.out.println("The size of the list is: "+ size);
     }
 
     public static LinkedList ConcatCDLL(LinkedList firstlist, LinkedList secondlist)
     {
+
 
         firstlist.tail.previous.next = secondlist.head.next;
         secondlist.head.next.previous = firstlist.tail.previous;
@@ -95,6 +96,8 @@ public class LinkedList {
     }
     public static LinkedList MergeCDLL(LinkedList firstlist, LinkedList secondlist)
     {
+
+
         firstlist.tail.previous.next = secondlist.head.next;
         secondlist.head.next.previous = firstlist.tail.previous;
 

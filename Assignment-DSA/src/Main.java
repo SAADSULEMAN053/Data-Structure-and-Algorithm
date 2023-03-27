@@ -105,7 +105,10 @@ public class Main {
         System.out.println();
         System.out.println("List after concatination: ");
         concatedlist.DisplayList();
-// creating a separate link
+
+        System.out.println();
+        concatedlist.size();
+// creating a separate linklist
 
         LinkedList thirdlist = new LinkedList();
 
@@ -146,5 +149,9 @@ public class Main {
         System.out.println("List after merging: ");
         concatedlist.DisplayList();
 
+// checking size again
+
+        System.out.println();
+        concatedlist.size();
     }
 }
